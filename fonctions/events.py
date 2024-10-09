@@ -103,7 +103,7 @@ async def button_callback(interaction, button_number, category):
     else:
         with open("json/message.json", "r") as f:
             messages = json.load(f)
-        await interaction.response.send_message(f"**ICI** ➡: {messages['categories'][category][button_number]['description']} \n ❤**MERCI POUR TON ACHAT** \n *Si besoin d'aide contacte @lili_rgl* \n ✨ **[BOUTIQUE](https://lilirgl.mysellix.io/fr/)**")
+        await interaction.response.send_message(f"**ICI** ➡: {messages['categories'][category][button_number]['description']} \n ❤**MERCI POUR TON ACHAT** \n *Si besoin d'aide contacte @lili_rgl* \n ✨ **[BOUTIQUE](https://lilirigel.mysellix.io/fr/)**")
         valid_key = None  # Réinitialiser la clé valide après un clic
         await interaction.message.delete()  # Supprimer le message du menu
 
@@ -119,7 +119,7 @@ def on_message(bot):
                 ## EMBED
                 embed = discord.Embed(
                     title="🤖 MENU", 
-                    description="Sélectionnez une option par rapport a votre 🔑 **clé** \n 👀 Pas de **clé** ? vient en acheter **[LIEN BOUTIQUE](https://lilirgl.mysellix.io/fr/)**", 
+                    description="Sélectionnez une option par rapport a votre 🔑 **clé** \n 👀 Pas de **clé** ? vient en acheter **[LIEN BOUTIQUE](https://lilirigel.mysellix.io/fr/)**", 
                     color=0xE4022C)
                 embed.set_author(name="Lili Rigel BOT", url="https://aizufans-agency.fr", icon_url="https://cdn.discordapp.com/attachments/1287722220499505207/1287722403882860564/433422822_7357960910946904_3542919409976340496_n.jpg?ex=67065af1&is=67050971&hm=9c2e679fabd80c174888783c9151df79a8c699d8d0e923c3e71d2159186af868&")
                 embed.set_image(url="https://media.discordapp.net/attachments/565218193581277209/1291481207196090499/BANNER.png?ex=67062fda&is=6704de5a&hm=f7404bd31b66470e97cbb41f916790f72a6bf7c0bc7705b3cfdf89414badbcf7&=&format=webp&quality=lossless")
